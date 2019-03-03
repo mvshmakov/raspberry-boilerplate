@@ -26,6 +26,11 @@ def index(query):
     ))
     return 'data posted'
 
+@app.route('/get_len', methods=['GET'])
+def get_len():
+    name = request.form['name'];
+    return json.dumps({'len': len(name)})
+
 
 if __name__ == "__main__":
     config_parser = ConfigParser()

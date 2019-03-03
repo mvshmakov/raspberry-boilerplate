@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Датчики Raspberry Pi</title>
+    <script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        function get_len() {
+            $.ajax({
+                type: "GET",
+                url: "/get_len",
+                data: $('form').serialize(),
+                success: function(response) {
+                    var response = jQuery.parseJSON(response)
+                    $('#temp').html(response.temp)
+                },
+                error: function(error) {
+                    console.log(error);
+                }
+            });
+        }
+    </script>
+
+    <form action="/get_len" method="get" name="form">
+        <input type="button" value="Обновить данные" onclick="get_len();">
+    </form>
+
+    <form>
+        <label for="temp">Датчик температуры:</label>
+        <input id="temp" name="temp" type="text">
+
+        <label for="humidity">Датчик влажности:</label>
+        <input id="humidity" name="humidity" type="text">
+
+        <label for="hit">Датчик удара:</label>
+        <input id="hit" name="hit" type="text">
+
+        <label for="move">Датчик движения:</label>
+        <input id="move" name="move" type="text">
+
+        <label for="distance">Датчик расстояния:</label>
+        <input id="distance" name="distance" type="text">
+    </form>
+</body>
+</html>
