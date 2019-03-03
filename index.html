@@ -1,8 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+п»ї<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Датчики Raspberry Pi</title>
+    <meta charset="utf-8">
+    <title>Р”Р°С‚С‡РёРєРё Raspberry Pi</title>
     <script type=text/javascript src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
@@ -24,24 +24,34 @@
     </script>
 
     <form action="/get_len" method="get" name="form">
-        <input type="button" value="Обновить данные" onclick="get_len();">
+        <input type="button" value="РћР±РЅРѕРІРёС‚СЊ РґР°РЅРЅС‹Рµ" onclick="get_len();">
     </form>
 
     <form>
-        <label for="temp">Датчик температуры:</label>
+        <div>
+        <label for="temp">Р”Р°С‚С‡РёРє С‚РµРјРїРµСЂР°С‚СѓСЂС‹:</label>
         <input id="temp" name="temp" type="text">
+        </div>
 
-        <label for="humidity">Датчик влажности:</label>
+        <div>
+        <label for="humidity">Р”Р°С‚С‡РёРє РІР»Р°Р¶РЅРѕСЃС‚Рё:</label>
         <input id="humidity" name="humidity" type="text">
+        </div>
 
-        <label for="hit">Датчик удара:</label>
+        <div>
+        <label for="hit">Р”Р°С‚С‡РёРє СѓРґР°СЂР°:</label>
         <input id="hit" name="hit" type="text">
+        </div>
 
-        <label for="move">Датчик движения:</label>
+        <div>
+        <label for="move">Р”Р°С‚С‡РёРє РґРІРёР¶РµРЅРёСЏ:</label>
         <input id="move" name="move" type="text">
+        </div>
 
-        <label for="distance">Датчик расстояния:</label>
+        <div>
+        <label for="distance">Р”Р°С‚С‡РёРє СЂР°СЃСЃС‚РѕСЏРЅРёСЏ:</label>
         <input id="distance" name="distance" type="text">
+        </div>
     </form>
 </body>
 </html>
