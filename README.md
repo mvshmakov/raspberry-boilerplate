@@ -48,3 +48,4 @@
 ## If not Raspberry PI:
 #### https://problemsolvingwithpython.com/11-Python-and-External-Hardware/11.04-Reading-a-Sensor-with-Python/
 #### https://forum.arduino.cc/index.php?topic=463101.0
+#### https://pypi.org/project/pyFirmata/
