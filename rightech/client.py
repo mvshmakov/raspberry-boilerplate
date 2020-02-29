@@ -1,6 +1,20 @@
 #!/usr/bin/python3
+
 from time import sleep
 import paho.mqtt.client as mqtt
+
+TOPICS = {
+    "temperature_data": "data/temperature",
+    "humidity_data": "data/humidity",
+    "hit_data": "data/hit",
+    "move_data": "data/move",
+    "distance_data": "data/distance",
+    "light_data": "data/light",
+    "switchable_button_data": "data/switchable_button",
+
+    "switch_button_command": "commands/switch_button",
+    "poll_sensors_manual_command": "commands/poll_sensors_manual"
+}
 
 
 class RightechClient:

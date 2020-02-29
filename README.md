@@ -1,16 +1,50 @@
 # raspberry-boilerplate
-## Накатываем `Raspbian Stretch`: https://romantelychko.com/blog/1611/
-## Работаем с `GPIO`:
+##### Consider it exactly as a boilerplate, not as the library!
+##### That means you can change every file existing in the repo to fit your needs.
+
+## Running in the virtualenv:
+##### 1) Install `virtualenv`:
+* `~ python3 -m pip install virtualenv`
+##### 2) Create virtual environment:
+* `~ python3 -m venv env`
+##### 3) Activate virtual environment:
+* `~ source env/bin/activate`
+##### 4) Install dependencies:
+* `~ pip3 install --upgrade pip` (if needed)
+* `~ pip3 install -r requirements.txt`
+##### 5) If you are working under the MacOS environment, `RPi.GPIO` is not available. 
+##### For MacOS install `FakeRPi`, in other OS install `RPi.GPIO`:
+* `~ pip3 install git+https://github.com/sn4k3/FakeRPi` (for MacOS)
+* `~ pip3 install RPi.GPIO` (for other)
+##### 6) Running the app in development mode (with "watch mode"):
+* `~ FLASK_APP=app.py FLASK_ENV=development python -m flask run`
+##### 7) In order to exit from venv:
+* `~ deactivate`
+
+## Installing `Raspbian Stretch` (Raspberry OS): https://romantelychko.com/blog/1611/
+
+## Working with `GPIO`:
 #### 1) http://hexvolt.blogspot.com/2013/02/raspberry-pi-gpio.html
-## Работаем с `RFID`:
+
+## Working with `RFID`:
 #### 1) https://pimylifeup.com/raspberry-pi-rfid-rc522/
 #### 2) https://www.raspberrypi-spy.co.uk/2018/02/rc522-rfid-tag-read-raspberry-pi/
-## Работаем с датчиком температуры и влажности:
+
+## Working with a `temperature` and `humidity` sensor:
 #### 1) https://kropochev.com/?go=all%2Fraspberry-pi-and-humidity-sensor-dht%2F
 #### 2) https://www.rlocman.ru/review/article.html?di=336425
 #### 3) https://sysengineer.ru/2018/10/27/schityvanie-dannyh-s-datchika-vlazhnosti-i-temperatury-dht11-na-orange-pi-pri-pomoschi-python-3.html
-## Работаем с LCD дисплеем:
+
+## Working with `LCD`:
 #### 1) [https://masterkit.ru/zip/raspi-dht11-i2clcd.py](https://www.rlocman.ru/review/article.html?di=336425)
 #### 2) http://www.circuitbasics.com/raspberry-pi-lcd-set-up-and-programming-in-python/
-## Пример:
+
+## GPIO Zero library recipes with Pin Numbering:
+#### https://gpiozero.readthedocs.io/en/stable/recipes.html
+
+## Example:
 #### https://github.com/gurumitts/garage-butler/blob/master/garage/butler.py
+
+## If not Raspberry PI:
+#### https://problemsolvingwithpython.com/11-Python-and-External-Hardware/11.04-Reading-a-Sensor-with-Python/
+#### https://forum.arduino.cc/index.php?topic=463101.0

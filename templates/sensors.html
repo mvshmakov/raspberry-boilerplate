@@ -1,0 +1,6 @@
+{% for key in sensors %}
+    <div style="padding: 5px 0;">
+        <label for={{ key }}>{{ sensors[key].name }}</label>
+        <input id={{ key }} name={{ key }} type="text" value={{ sensors[key].value }}>
+    </div>
+{% endfor %}
