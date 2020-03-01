@@ -56,3 +56,6 @@
 #### Setup of serial port for communicating with python: https://www.instructables.com/id/How-to-Communicate-With-Arduino-From-a-Python-Scri/
 #### Library fotr communicating: https://github.com/thearn/Python-Arduino-Command-API
 #### A lot of examples: https://yandex.ru/search/?text=communicating%20with%20arduino%20from%20local%20python&lr=213&clid=1955453&win=345
+
+## STM32:
+#### https://github.com/pawelglogowski/STM32F3-COM-Python/blob/master/Demo/Python/stm32demo_new.py
